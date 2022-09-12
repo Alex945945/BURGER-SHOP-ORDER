@@ -45,11 +45,86 @@ main{
     text-decoration: none;
     color: black;
     padding: 5px;
+    font-weight: bold;
+    position: relative;
+    animation: 1s lerender linear;
 }
 .name{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.one, .two, .three, .four, .five, .six, .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-8{
+    position: relative;
+}
+.one{
+    animation: 0.7s render linear;
+}
+.two{
+    animation: 0.9s render linear;
+}
+.three{
+    animation: 1.1s render linear;
+}
+.four{
+    animation: 1.3s render linear;
+}
+.five{
+    animation: 1.5s render linear;
+}
+.six{
+    animation: 1.7s render linear;
+}
+.item-1{
+    animation: 0.4s lerender linear;
+}
+.item-2{
+    animation: 0.6s lerender linear;
+}
+.item-3{
+    animation: 0.8s lerender linear;
+}
+.item-4{
+    animation: 1.0s lerender linear;
+}
+.item-5{
+    animation: 1.2s lerender linear;
+}
+.item-6{
+    animation: 1.4s lerender linear;
+}
+.item-8{
+    animation: 1.6s lerender linear;
+}
+@keyframes lerender {
+    0% {
+        left: -20px;
+        opacity: 0;
+    }
+
+    50% {
+        left: -10px;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+@keyframes render {
+    0% {
+        top: -20px;
+        opacity: 0;
+    }
+
+    50% {
+        top: -10px;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
 }
 .logoName{
         max-width: 10%;
